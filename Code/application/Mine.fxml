@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="600.0" maxWidth="600.0" minHeight="600.0" minWidth="600.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Mine">
+   <children>
+      <AnchorPane fx:id="main" layoutX="100.0" layoutY="200.0" prefHeight="400.0" prefWidth="400.0" />
+      <Button fx:id="klick" layoutX="50.0" layoutY="46.0" minHeight="50.0" minWidth="100.0" mnemonicParsing="false" onAction="#handle1" text="MARK">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <Button fx:id="start" layoutX="250.0" layoutY="46.0" minHeight="50.0" minWidth="100.0" mnemonicParsing="false" onAction="#handle2" text="START">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="help" disable="true" layoutX="450.0" layoutY="46.0" minHeight="50.0" minWidth="100.0" mnemonicParsing="false" onAction="#handle3" text="HELP" AnchorPane.leftAnchor="450.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <TextField fx:id="tf" alignment="CENTER" layoutX="247.0" layoutY="120.0" prefHeight="25.0" prefWidth="107.0" promptText="Number of mines" />
+      <Label fx:id="lab_win" alignment="CENTER" layoutX="14.0" layoutY="109.0" text="YOU WON" textFill="#3aff00" visible="false">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <Label fx:id="lab_loss" alignment="CENTER" layoutX="22.0" layoutY="109.0" text="TRY AGAIN" textAlignment="CENTER" textFill="#ffb200" visible="false">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tf_help" alignment="CENTER" disable="true" editable="false" layoutX="487.0" layoutY="120.0" prefHeight="25.0" prefWidth="27.0" text="0" />
+   </children>
+</AnchorPane>
